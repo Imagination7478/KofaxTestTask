@@ -76,7 +76,7 @@ namespace KofaxTestTask
 
 
             equation = postfix(finalEquation);
-            Console.WriteLine($"Postfix write: {equation}");
+            //Console.WriteLine($"Postfix write: {equation}"); 
             char[] arr = equation.ToCharArray();
             Array.Reverse(arr); // инвертируем строку, т.к. последнее действие - корень
 
