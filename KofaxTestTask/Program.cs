@@ -127,7 +127,7 @@ namespace KofaxTestTask
                 // Проверяем, если у ноды есть оба ребенка, и родитель, то возвращаемся к родителю
                 // как только находим корень, выходим из цикла
                 if (node.getParent() != null && node.getLChild() != null && node.getRChild() != null) node = node.getParent();
-                if (node.getParent() == null) break;
+                else if (node.getParent() == null) break;
             }
             return node;
         }
